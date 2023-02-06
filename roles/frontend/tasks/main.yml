@@ -33,7 +33,7 @@
 #systemctl restart nginx &>>${LOG}
 #status_check
 
-- name: Install Nginx Server
+- name: Install Nginx
   ansible.builtin.yum:
     name: nginx
     state: installed
