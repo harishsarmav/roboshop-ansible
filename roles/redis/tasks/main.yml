@@ -26,7 +26,7 @@
     state: installed
 
 - name: Enable Redis 6.2
-  ansible.builtin.shell: dnf module enable redis:remi-6.2
+  ansible.builtin.shell: dnf module enable redis:remi-6.2 -y
 
 - name: Install redis server
   ansible.builtin.replace:
