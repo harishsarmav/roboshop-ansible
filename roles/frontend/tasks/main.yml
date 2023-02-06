@@ -37,8 +37,8 @@
   ansible.builtin.yum:
     name: nginx
     state: installed
-  register: out
 
-- name: out
-  debug:
-    msg: "{{out}}"
+- name: Remove old content
+  ansible.builtin.file:
+    path: /usr/share/nginx/html
+    state: absent
