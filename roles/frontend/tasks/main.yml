@@ -41,4 +41,4 @@
 
 - name: out
   debug:
-    sg: "{{out}}"
+    msg: "{{out}}"
