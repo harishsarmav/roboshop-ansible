@@ -31,7 +31,7 @@
     path: /app
     state: latest
 
-- name: Copy systemd file
+- name: Copy SystemD file
   ansible.builtin.copy:
     src: catalogue.service
     dest: /etc/systemd/system/catalogue.service
