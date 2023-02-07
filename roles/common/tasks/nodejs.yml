@@ -44,5 +44,5 @@
     state: restarted
 
 - name: Load Schema
-  import_tasks: "{{schema_type}}-schema .yml"
+  import_tasks: "{{schema_type}}-schema.yml"
   when: schema_load
