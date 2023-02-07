@@ -56,5 +56,5 @@
 - name: Load Schema
   community.mongodb.mongodb_shell:
     login_host: mongodb-dev.harishsarma.online
-    file:  "/app/schema/{{component}}.js"
+    file: "/app/schema/{{component}}.js"
     idempotent: yes
