@@ -1,18 +1,15 @@
-- name: Install Maven
+- name: Install golang
   ansible.builtin.yum:
-    name: maven
+    name: golang
     state: installed
 
 - name: App Pre-Req
   ansible.builtin.include_tasks: "app-prereq.yml"
 
-- name: Maven Build
-  ansible.builtin.shell: mvn clean package ; mv target/{{component}}-1.0.jar {{component}}.jar
+- name: Download and Build
+  ansible.builtin.shell: go mod init dispatch ; go get ; go build
   args:
     chdir: /app
-
-- name: SystemD Setup
-  ansible.builtin.include_tasks: "systemd.yml"
 
 - name: SystemD Setup
   ansible.builtin.include_tasks: "systemd.yml"
