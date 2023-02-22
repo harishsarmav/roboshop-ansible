@@ -41,3 +41,9 @@
         - {name: "dev.rabbitmq.AMQP_PASS", value: "roboshop123" }
         - {name: "dev.mysql.DB_ADMIN_USER", value: "root" }
         - {name: "dev.mysql.DB_ADMIN_PASS", value: "RoboShop@1" }
+        - { name: "dev.docdb.DB_ADMIN_USER", value: "admin1" }
+        - { name: "dev.docdb.DB_ADMIN_PASS", value: "RoboShop123" }
+        - { name: "dev.rds.DB_ADMIN_USER", value: "admin1" }
+        - { name: "dev.rds.DB_ADMIN_PASS", value: "RoboShop123" }
+        - { name: "dev.rabbitmq.USER", value: "roboshop" }
+        - { name: "dev.rabbitmq.PASS", value: "roboshop1234" }
